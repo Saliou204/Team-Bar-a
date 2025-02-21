@@ -2,24 +2,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #A50044;
-    color: white;
+    background-color: #003366;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-    margin: 0 15px;
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+.language-selection {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-selection select {
+    padding: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.articles article {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.articles img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #A50044;
+    background-color: #003366;
     color: white;
+    padding: 10px;
+    text-align: center;
 }
